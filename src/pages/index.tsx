@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { ArrowRight } from 'phosphor-react';
+
 import {
   About,
   AboutContent,
@@ -13,6 +15,7 @@ import {
   HeroImage,
   Projects,
   Wrapper,
+  IconButton,
 } from './home.styled';
 import { VerticalProjectCard } from '../components/VerticalProjectCard';
 import { ContactMeForm } from '../components/ContactMeForm';
@@ -83,7 +86,9 @@ const Home: NextPage = () => {
           </div>
           <div className='form-container'>
             <ContactMeForm />
-            <button type='submit'>Send</button>
+            <IconButton type='submit'>
+              Send <ArrowRight size={24} />
+            </IconButton>
           </div>
         </div>
       </Footer>

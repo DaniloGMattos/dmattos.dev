@@ -122,6 +122,33 @@ export const Footer = styled('footer', {
     },
     '& .form-container': {
       width: '40%',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '8px',
     },
+  },
+});
+export const IconButton = styled('button', {
+  borderRadius: '99999px',
+  padding: '4px 16px',
+  color: '$cyan11',
+  backgroundColor: '$cyan4',
+  display: 'flex',
+  gap: '8px',
+  alignItems: 'center',
+  justifyContent: 'center',
+  border: 'none',
+  maxWidth: 'fit-content',
+  alignSelf: 'flex-end',
+  fontSize: '18px',
+  transition: 'background-color 0.3s',
+  '&:hover': {
+    backgroundColor: '$cyan5',
+  },
+  '&:active': {
+    backgroundColor: '$cyan6',
+  },
+  '&:focus-visible': {
+    outline: '-webkit-focus-ring-color auto 1px',
   },
 });
