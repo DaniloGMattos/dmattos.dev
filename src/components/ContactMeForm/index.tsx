@@ -1,11 +1,19 @@
-import { Form } from './styles';
+import { Form, InputBox } from './styles';
 
 export const ContactMeForm = () => {
   return (
     <Form>
-      <input type='text' name='name' id='' />
-      <input type='email' name='email' id='' />
-      <textarea name='message' cols={50}></textarea>
+      <InputBox>
+        <input type='text' name='name' id='' required />
+        <span className='label'>Name</span>
+      </InputBox>
+      <InputBox>
+        <input type='email' name='email' id='' required />
+
+        <span className='label'>E-mail</span>
+      </InputBox>
+
+      <textarea name='message' cols={50} required></textarea>
     </Form>
   );
 };
